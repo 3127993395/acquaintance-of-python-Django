@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<form enctype="multipart/form-data" action="" method="post">
+{#    Django的CSRF防御机制#}
+    {% csrf_token %}
+    <input type="file" name="myfile"/>
+    <input type="submit" value="上传文件"/>
+</form>
+</body>
+</html>
